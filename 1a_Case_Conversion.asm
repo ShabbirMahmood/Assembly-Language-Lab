@@ -1,4 +1,4 @@
-; Hello How
+; My First Git File
 ;Shabbir Mahmood ID: 14015139 Assembly Language Lab Problem-1a(Case Conversion of Input String)  Date: 25-02-2017
 .MODEL SMALL
 .STACK 100H
