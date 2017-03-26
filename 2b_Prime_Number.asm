@@ -26,18 +26,13 @@
         CMP AL,'0'
         JGE OK               ; JUMP GREATER EQUAL >= 0
         
-        ;CMP AL,'9'             ; ******* CHECKING N>=9 ? 
-        ;JLE OK               ; IN N IS <= 9 THEN OK 
-       
-        
     WRONG_ENTRY: 
     
         LEA DX,MSG4
         MOV AH,09H
         INT 21H
         JMP EXIT
-        
-        
+               
     OK:
         SUB AL,30H           ; CONVERTING TO DECIMAL FROM CHARACTER  
         MOV DIVIDEND,AL
