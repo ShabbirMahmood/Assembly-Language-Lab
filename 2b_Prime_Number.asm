@@ -51,6 +51,12 @@
     ;CHECK_PRIME_NUMBER PROCEDURE
     CHECK_PRIME_NUMBER PROC
        
+        CMP AL,0
+        JE NOT_PRIME
+        
+        CMP AL,1
+        JE NOT_PRIME
+        
         MOV CL,2          ; Divisor in CL
         XOR AX,AX         ; CLEARING AX 
         
