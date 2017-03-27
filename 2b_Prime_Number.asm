@@ -74,7 +74,15 @@
         CMP CL,1
         JNE TOP
         
-        JMP PRIME   
+        ;JMP PRIME        ; ******** Not Necessary  
+        
+    PRIME: 
+        
+        LEA DX,MSG2
+        MOV AH,09H
+        INT 21H
+        
+        RET
         
     NOT_PRIME:
     
@@ -84,13 +92,7 @@
      
         RET
         
-    PRIME: 
-        
-        LEA DX,MSG2
-        MOV AH,09H
-        INT 21H
-        
-        RET 
+ 
         
         CHECK_PRIME_NUMBER ENDP
     
